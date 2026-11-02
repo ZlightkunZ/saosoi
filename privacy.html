@@ -34,7 +34,7 @@
 </div>
 
 <h2>1. Dữ liệu lưu trên thiết bị</h2>
-<p>Thông tin bạn nhập (tên gợi nhớ, ngày giờ sinh, giới tính), các lá số đã lưu, bài luận giải, lịch sử trò chuyện và tùy chọn được lưu trong bộ nhớ của ứng dụng trên điện thoại. Chúng tôi không truy cập được dữ liệu này, trừ phần bạn bật đồng bộ (mục 4). Tính năng "Sao lưu" tạo một tệp trên máy bạn; tệp đó do bạn quản lý.</p>
+<p>Thông tin bạn nhập (tên gợi nhớ, ngày giờ sinh, giới tính), các lá số đã lưu, ngày giỗ và kỷ niệm bạn thêm, người bạn đã lưu trong Bắt Sóng, bài luận giải, lịch sử trò chuyện và tùy chọn được lưu trong bộ nhớ của ứng dụng trên điện thoại. Thông báo nhắc nhở và tiện ích màn hình chính được tạo ngay trên máy, không qua máy chủ. Chúng tôi không truy cập được dữ liệu này, trừ phần bạn bật đồng bộ (mục 4). Tính năng "Sao lưu" tạo một tệp trên máy bạn; tệp đó do bạn quản lý.</p>
 
 <h2>2. Luận giải bằng AI</h2>
 <p>Khi bạn yêu cầu luận giải hoặc trò chuyện với Đại Sư, ứng dụng gửi đến máy chủ trung gian của Saosoi các thông tin cần cho bài luận: giới tính, năm sinh, Can Chi năm/tháng/ngày/giờ, các sao và cung đã tính trong lá số, cùng câu hỏi bạn nhập. <strong>Ứng dụng không gửi tên của bạn.</strong> Máy chủ chuyển nội dung này đến nhà cung cấp mô hình AI (DeepSeek, và Google Gemini khi cần dự phòng) để tạo câu trả lời. Chúng tôi không lưu nội dung câu hỏi hay câu trả lời trên máy chủ; các nhà cung cấp AI xử lý theo chính sách của họ. Vì vậy, đừng nhập thông tin nhạy cảm không cần thiết vào khung trò chuyện.</p>
@@ -46,6 +46,7 @@
 <p>Đăng nhập Google là tùy chọn. Bạn cũng có thể dùng hồ sơ cá nhân chỉ lưu trên máy. Khi đăng nhập, Google cung cấp cho ứng dụng tên, email và ảnh đại diện của bạn để hiển thị trong tab Tài khoản; các thông tin này chỉ nằm trên thiết bị.</p>
 <h3>Dữ liệu được đồng bộ</h3>
 <p>Nếu bạn đồng ý bật "Đồng bộ đám mây" (được hỏi ở lần đăng nhập Google đầu tiên), Saosoi lưu một bản sao hồ sơ lên máy chủ, gồm: lá số chính chủ và kho lá số (tên gợi nhớ, ngày giờ sinh, giới tính), bài luận giải, lịch sử trò chuyện và tùy chọn trong ứng dụng; kèm mã cài đặt của thiết bị, thời điểm và kích thước bản đồng bộ.</p>
+<p>Bản sao cũng gồm ngày giỗ, kỷ niệm bạn đã thêm và những người bạn đã lưu trong Bắt Sóng (tên bạn đặt, ngày sinh, giới tính, giờ sinh nếu có, mối quan hệ và điểm tương hợp). Đây là thông tin về người khác: chỉ lưu khi bạn có quyền chia sẻ, và bạn có thể xóa từng người trong Bắt Sóng.</p>
 <h3>Dữ liệu không được lưu trên máy chủ đồng bộ</h3>
 <p>Mật khẩu Google, email, tên và ảnh tài khoản Google. Mỗi lần đồng bộ, ứng dụng gửi mã xác thực do Google cấp. Máy chủ chỉ dùng mã này để xác minh bạn là chủ tài khoản và lấy mã định danh tài khoản Google. Mã định danh được băm (SHA-256) trước khi dùng làm khóa lưu trữ; mã xác thực không được lưu lại. Trạng thái VIP và phiên đăng nhập không nằm trong bản đồng bộ.</p>
 <h3>Mục đích, lưu trữ và bảo mật</h3>
@@ -59,7 +60,7 @@
 <p>Bản sao được giữ cho đến khi bạn xóa trong ứng dụng hoặc yêu cầu chúng tôi xóa (mục 8).</p>
 
 <h2>5. Bắt Sóng (xem độ tương hợp)</h2>
-<p>Việc tính độ tương hợp diễn ra trên thiết bị; tên người được xem chỉ lưu trên máy bạn. Khi bạn tạo liên kết mời, máy chủ lưu một bản tóm tắt không có tên và không có ngày sinh (Địa Chi, Thiên Can, Nạp Âm, Số chủ đạo, Cung hoàng đạo, Cung Phi) gắn với mã mời để người nhận mở được. Liên kết hết hiệu lực sau 30 ngày. Ứng dụng cũng gửi các sự kiện ẩn danh (ví dụ: đã xem, đã gửi lời mời, đã nhận lời mời) để chúng tôi đếm mức độ sử dụng tính năng; các sự kiện này không chứa thông tin lá số.</p>
+<p>Việc tính độ tương hợp diễn ra trên thiết bị. Người bạn bấm lưu được giữ trên máy và, nếu bạn bật đồng bộ, trong bản sao đám mây của bạn (mục 4). Khi bạn tạo liên kết mời, máy chủ lưu một bản tóm tắt không có tên và không có ngày sinh (Địa Chi, Thiên Can, Nạp Âm, Số chủ đạo, Cung hoàng đạo, Cung Phi) gắn với mã mời để người nhận mở được. Liên kết hết hiệu lực sau 30 ngày. Ứng dụng cũng gửi các sự kiện ẩn danh (ví dụ: đã xem, đã gửi lời mời, đã nhận lời mời) để chúng tôi đếm mức độ sử dụng tính năng; các sự kiện này không chứa thông tin lá số.</p>
 
 <h2>6. Gói VIP và thanh toán</h2>
 <p>Khi có gói VIP, việc thanh toán do Google Play xử lý; chúng tôi không nhận số thẻ hay thông tin thanh toán của bạn. Máy chủ chỉ nhận mã giao dịch do Google Play cấp để xác minh và ghi nhận quyền VIP cho mã cài đặt của bạn.</p>
@@ -94,7 +95,7 @@
 </div>
 
 <h2>1. Data on your device</h2>
-<p>What you enter (chart labels, birth date and time, gender), saved charts, readings, chat history and preferences are stored in the app's storage on your phone. We cannot access them unless you turn on sync (section 4). The "Backup" feature creates a file on your phone that you control.</p>
+<p>What you enter (chart labels, birth date and time, gender), saved charts, the death anniversaries and other dates you add, people you saved in Bắt Sóng, readings, chat history and preferences are stored in the app's storage on your phone. Reminders and the home-screen widget are created on the device, without our servers. We cannot access them unless you turn on sync (section 4). The "Backup" feature creates a file on your phone that you control.</p>
 
 <h2>2. AI readings</h2>
 <p>When you ask for a reading or chat with the Master, the app sends Saosoi's relay server what the reading needs: gender, birth year, the year/month/day/hour pillars, the computed stars and palaces, and your question. <strong>Your name is never sent.</strong> The server forwards this to an AI model provider (DeepSeek, with Google Gemini as fallback) to generate the answer. We don't store questions or answers on our server; the AI providers process them under their own policies, so please don't type unnecessary sensitive information into the chat.</p>
@@ -105,11 +106,12 @@
 <h2>4. Google sign-in and cloud sync</h2>
 <p>Google sign-in is optional; you can use a local profile instead. When you sign in, Google gives the app your name, email and photo to show in the Account tab; these stay on the device.</p>
 <p>If you agree to "Cloud sync" (asked at your first Google sign-in), Saosoi stores a copy of your profile on our server: your own chart and saved charts (label, birth date/time, gender), readings, chat history and app preferences, plus the install ID and the time and size of each sync.</p>
+<p>The copy also includes the dates you added and the people you saved in Bắt Sóng (the name you gave, date of birth, gender, birth hour if entered, relationship and compatibility score). This is information about other people: save it only if you are entitled to share it. You can delete each person in Bắt Sóng.</p>
 <p>The sync server does not store your Google password, email, name or photo. Each sync sends a Google-issued token; the server only uses it to confirm you own the account and to read your Google account ID, which is hashed (SHA-256) before it is used as the storage key. The token is not kept. VIP status and your sign-in session are not part of the copy.</p>
 <p>The copy is used only to restore your data on a new phone or after reinstalling, and to keep your devices in step. It travels over HTTPS and is stored on Cloudflare R2, encrypted at rest; servers may be outside Vietnam. Only requests carrying your own valid Google token can read or write it. You can turn sync off (the existing copy stays until you delete it), tap "Delete cloud data" to erase it immediately, and choose to keep or clear on-device data when you sign out. The copy is kept until you delete it or ask us to (section 8).</p>
 
 <h2>5. Bắt Sóng (compatibility)</h2>
-<p>Compatibility is computed on the device; the other person's name stays on your phone. When you create an invite link, the server stores a summary with no name and no birth date (earthly branch, heavenly stem, Nạp Âm element, life path number, sun sign, Cung Phi) under the invite code so the recipient can open it. Links expire after 30 days. The app also sends anonymous events (e.g. viewed, invite sent, invite accepted) so we can count feature use; they contain no chart data.</p>
+<p>Compatibility is computed on the device. People you save stay on your phone and, if you turned on sync, in your cloud copy (section 4). When you create an invite link, the server stores a summary with no name and no birth date (earthly branch, heavenly stem, Nạp Âm element, life path number, sun sign, Cung Phi) under the invite code so the recipient can open it. Links expire after 30 days. The app also sends anonymous events (e.g. viewed, invite sent, invite accepted) so we can count feature use; they contain no chart data.</p>
 
 <h2>6. VIP and payments</h2>
 <p>When VIP plans are offered, Google Play handles payment; we never receive card or payment details. Our server only receives the Google Play purchase token to verify the purchase and record VIP for your install ID.</p>
